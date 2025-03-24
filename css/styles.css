@@ -1,0 +1,73 @@
+:root{
+    --primary: #D81E58;
+    --secondary: #8a4fff;
+    --grey: #AAA;
+    --light: #EEE;
+    --dark: #131A26;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--light);
+}
+.container{
+    padding: 3rem 2rem;
+    max-width: 640px;
+    margin: 0 auto;
+}
+.content{
+    background-color: var(--dark);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+h1 {
+    color: var(--light);
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+p {
+    color: var(--grey);
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+#contadorVisitas{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--primary);
+}
+#btnReestablecer{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: 0.4s ease-out;
+    opacity: 0.5;
+}
+#btnReestablecer:hover{
+    opacity: 1;
+    color: var(--secondary);
+}
+#btnReestablecer:active{
+    transform: scale(1.1);
+    color: var(--primary);
+    transition: 0.1s ease-in;
+}
